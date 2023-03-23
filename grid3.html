@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="../styles.css">
 
   <style>
+
     body {
       background-color: #fff;
       color: #333;
@@ -28,8 +29,28 @@
 
     .grid {
       display: grid;
-      grid-template-columns: 1fr 2fr;
+      grid-template-columns: auto auto auto;
       gap: 10px;
+      grid-template-areas: "one one one"
+      " two three three"
+      " . four four";
+    }
+
+    .one {
+      grid-area: one;
+    }
+    
+
+    .two {
+      grid-area: two;
+    }
+
+    .three {
+      grid-area: three;
+    }
+
+    .four {
+      grid-area: four;
     }
   </style>
 
